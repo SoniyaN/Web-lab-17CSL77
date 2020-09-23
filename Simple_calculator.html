@@ -1,0 +1,135 @@
+<!--Javascript calculator to perform
+SUM, MUL, DIV, ADD
+-->
+<!DOCTYPE html>
+<html>
+<head><title>Simple calculator</title>
+    <style>
+         .title{
+             border-radius: 5px;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             font-size:x-large;
+             margin-bottom: 10px;
+             text-align: center;
+             color: black;
+             background-color: #f5f5f5;
+             width:100%;
+             height:auto;
+         }
+         input[type="text"]{
+             border-radius: 2px;
+             border:0;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             font-size: x-large;
+             text-align: right;
+             background-color: white;
+             width: 94%;
+             border-color: white;
+         }
+        input[type="button"]{
+            border-radius: 2px;
+            border:0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+            background-color:orange;
+            color: black;
+            width: 100px;
+            height:50px;
+        }
+        .cell_data{
+            background-color:orange;
+        }
+    </style>
+    <script>
+          function disp(val){
+              document.getElementById('sdm').value+=val;
+
+          }
+          function clr(){
+              document.getElementById('sdm').value=" ";
+          }
+
+          function solve(){
+             let x= document.getElementById('sdm').value;
+             let y=eval(x);
+             document.getElementById("sdm").value=y
+          }
+    </script>
+</head>
+<body>
+    <center>
+    <div class="title">Javascript lab program-- Simple calculator</div>
+    <br><br>
+    </center>
+<!--Ceate a table-->
+<center>
+ <table border="1"  cellspacing="10">
+    <tr>
+        <td style="background-color: red;" >
+            <input style="background-color: red;" type="button" value="CE" onclick="clr()">
+        </td>
+        <td colspan="3">
+            <input type="text" id="sdm">
+        </td>
+    </tr>
+    <!-- creating buttons and assign values to it-->
+    <tr>
+        <td class="cell_data">
+            <input type="button" value="+" onclick="disp('+')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="1" onclick="disp('1')" >
+        </td>
+        <td class="cell_data">
+            <input type="button" value="2" onclick="disp('2')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="3" onclick="disp('3')">
+        </td>
+    </tr>
+    <tr>
+        <td class="cell_data">
+            <input type="button" value="-" onclick="disp('-')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="4" onclick="disp('4')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="5" onclick="disp('5')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="6" onclick="disp('6')">
+        </td>
+    </tr>
+    <tr>
+        <td class="cell_data">
+            <input type="button" value="*" onclick="disp('*')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="7" onclick="disp('7')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="8"onclick="disp('8')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="9" onclick="disp('9')">
+        </td>
+    </tr>
+    <tr>
+        <td class="cell_data">
+            <input type="button" value="/" onclick="disp('/')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="." onclick="disp('.')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="0" onclick="disp('0')">
+        </td>
+        <td class="cell_data">
+            <input type="button" value="=" onclick="solve()"  >
+        </td>
+    </tr>
+ </table>
+</center>
+</body>
+</html>
