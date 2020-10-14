@@ -13,4 +13,5 @@ following problems:
 
 <ul><li>Parameter: A string</li>
   <li>Output: The position in the string of the left-most vowel</li><li>Parameter: A number</li><li>Output: The number with its digits in the reverse order</li></ul>
+  <img src='https://github.com/SoniyaN/Web-lab-17CSL77/blob/master/strin_position_4SU17CS098.png'>
   <img src='https://github.com/SoniyaN/Web-lab-17CSL77/blob/master/reverse_4SU17CS098.png'>
