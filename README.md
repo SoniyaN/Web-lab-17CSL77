@@ -3,7 +3,6 @@
 
 Write a JavaScript to design a simple calculator to perform the following operations: sum, product,
 difference and quotient.
-<hr>
 <img src="https://github.com/SoniyaN/Web-lab-17CSL77/blob/master/Simple%20calculator_4SU17CS098.png">
 <h3>Program 2</h3>
 
