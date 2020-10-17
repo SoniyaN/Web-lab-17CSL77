@@ -17,4 +17,5 @@ following problems:
 
 Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs
 HTML text that displays the resulting values in an HTML table format.
+
 <img src='https://github.com/SoniyaN/Web-lab-17CSL77/blob/master/square%26cube_4SU17CS098.png'>
